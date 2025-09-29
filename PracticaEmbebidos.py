@@ -91,6 +91,7 @@ def peatonal():
 
 while True:
     #Apaga todos
+    estado = 0
     gpio.output(a1,0)
     gpio.output(v1,0)
     gpio.output(r1,0)
