@@ -100,7 +100,7 @@ while True:
     gpio.output(r2,0)
 
     gpio.output(pv1,0)
-    gpio.output(pr1,0)
+    gpio.output(pv2,0)
 
     #rojo peatonal
     gpio.output(pr1,1)
@@ -123,13 +123,13 @@ while True:
         time.sleep(0.3)
 
 
-    t1 = time.time()
+    
 
     if (estado==1): #peatonal
         peatonal()
         estado = 0 
 
-
+    t1 = time.time()
     while(time.time()-t1 <= 3):
         gpio.output(a1,1) #amarillo sem1
         if(gpio.input(boton)): #cambio de estado
